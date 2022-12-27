@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/16e3981d52.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="selected-nav-li"><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact-box">
+        <section>
+            <h1 class="page-titles">Contact me</h1>
+            <form action="https://formspree.io/f/xyyagonj" method="POST">
+                <fieldset class="contact-fieldset">
+                    <legend class="contact-legend">Your information</legend>
+                    <label for="first-name">First Name *</label>
+                    <input type="text" id="first-name" name="name" placeholder="Your Name" required>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="name" placeholder="Last Name">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="chat-about">I'd like to chat about... *</label>
+                    <select id="chat-about" name="chat-about" required>
+                        <option class="placeholder" disabled value selected> Select one option</option>
+                        <option value="front-end">Front-end development</option>
+                        <option value="back-end">Back-end development</option>
+                        <option value="full-stack">Full Stack development</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="comments">Comments *</label>
+                    <textarea id="comments" name="comments" placeholder="Whats on your mind?*" required></textarea>
+                <button type="submit" value="submit">Submit</button>
+            </fieldset>
+            </form>
+        </section>
+        <i class="fa-regular fa-paper-plane contact-icon"></i>
+    </div>
+    
+</body>
+
+</html>
