@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Mukta-Regular";
+  src: url("../fonts/Mukta-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+.profile-name {
+  font-family: "Mukta-Regular";
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.page-titles {
+  font-family: "Mukta-Regular";
+  font-weight: 600;
+  font-size: 3rem;
+  border-bottom: 2px solid #121417;
+  padding-bottom: 0.3rem;
+  width: 40%;
+}
+
+.subtitle {
+  font-family: "Poppins-Regular";
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: #F9F5F1;
+  color: #121417;
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  align-items: center;
+  background-color: #AEBDCA;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 80px 30%;
+  padding: 50px;
+}
+
+.contact-box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: nowrap;
+  font-family: "poppins-regular";
+}
+
+.contact-box section {
+  flex-basis: 60%;
+  margin-top: 10px;
+}
+
+.contact-fieldset {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.contact-legend {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.contact-box label{
+  display: block;
+  margin-top: 1rem;
+}
+
+.contact-box input{
+  margin-top: 0.2rem;
+  font-family: "poppins-regular";
+  width: 90%;
+  padding: 8px 5px;
+  font-size: 0.8rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.contact-box textarea{
+  width: 90%;
+  height: 10rem;
+  padding: 0.5rem;
+  font-family: "poppins-regular";
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.contact-box select{
+  font-size: 0.8rem;
+  padding: 8px 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-family: "poppins-regular";
+}
+
+.contact-box option{
+  color: gray;
+}
+
+.contact-box button{
+  font-size: 0.8rem;
+  font-family: "poppins-regular";
+  margin: 0.5rem 0;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 10%;
+  color: #F9F5F1;
+  background-color: #7895B2;
+}
+
+.contact-box form:invalid button{
+  background-color: transparent;
+  color: black;
+  cursor: not-allowed;
+}
+
+.contact-box button:hover{
+cursor: pointer;
+color: #7895B2;
+background-color: #F9F5F1;
+border: 1px solid #7895B2;
+padding: 5px 13px;
+}
+
+form:invalid>#submit {
+  pointer-events: none;
+}
+
+select > .placeholder {
+  display: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.nav-item {
+  align-self: flex-end;
+  color: #3d6ded;
+}
+
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+
+nav ul {
+  list-style-type: none;
+  background: rgb(120, 149, 178);
+  background: linear-gradient(90deg, rgba(120, 149, 178, 1) 12%, rgba(174, 189, 202, 1) 41%, rgba(232, 223, 202, 1) 81%, rgba(249, 245, 241, 1) 100%);
+  padding: 3px 0;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  font-family: "Poppins-Bold";
+  font-size: 0.8rem;
+  color: #373f47;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 0.2rem;
+}
+
+nav li {
+  border: 2px solid #7895B2;
+  border-radius: 8px;
+  width: 4.5rem;
+  background-color: #F9F5F1;
+  text-align: center;
+  display: inline-block;
+}
+
+.selected-nav-li{
+  background-color: #7895B2;
+  color: #F9F5F1;
+  border: 1px solid #F9F5F1;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background-color: #7895B2;
+  color: #F9F5F1;
+  border: 1px solid #F9F5F1;
+  border-radius: 8px;
+  padding: 0.1475rem;
+}
+
+.links-ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 0;
+  margin: 15px 0 0 0;
+  background-color: #F9F5F1;
+  border-radius: 10px;
+}
+
+.links-ul li {
+  margin: 0 2px;
+  padding: 2px 4px;
+}
+
+.social-links,
+.social-links:visited {
+  color: #373f47;
+}
+
+.social-links:hover {
+  color: #7895B2;
+}
+
+.contact-icon{
+  flex-basis: 40%;
+  padding-top: 10%;
+  font-size: 25vw;
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  color: #00000010;
+}
+
